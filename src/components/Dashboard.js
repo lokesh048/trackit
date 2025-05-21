@@ -22,7 +22,7 @@ import {
 import { auth, db } from '../firebase';
 import { ThemeContext } from '../context/ThemeContext';
 import BudgetAlert from './BudgetAlert';
-// import ExpenseFilter from './ExpenseFilter';
+import ExpenseFilter from './ExpenseFilter';
 import ExportCSV from './ExportCSV';
 import './Dashboard.css';
 
@@ -135,12 +135,12 @@ const Dashboard = ({ user }) => {
 
       <BudgetAlert user={user} totalSpent={totalSpent} />
 
-      {/* <ExpenseFilter
+      <ExpenseFilter
         filterCategory={filterCategory}
         setFilterCategory={setFilterCategory}
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
-      /> */}
+      />
 
       <div className="form">
         <input
